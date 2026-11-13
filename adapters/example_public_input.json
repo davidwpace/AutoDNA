@@ -1,0 +1,13 @@
+{
+  "classification": "public",
+  "question": "Can the source identity be retained without approving a biological claim?",
+  "sources": [
+    {
+      "doi": "10.1038/s41592-026-03213-8",
+      "title": "Reconstructing signaling histories of single cells via perturbation screens and transfer learning.",
+      "url": "https://doi.org/10.1038/s41592-026-03213-8",
+      "access_level": "abstract",
+      "claim_status": "review_required"
+    }
+  ]
+}

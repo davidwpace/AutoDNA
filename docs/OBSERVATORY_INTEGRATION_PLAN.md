@@ -58,3 +58,7 @@ A reproducible **software-only**, **read-only**, documented demonstration with s
 - The repository fork exists and is linked to upstream.
 - AutoDNA is resource #43 in the Open Biomedical Resource Center; the GitHub catalog-validation run passed: https://github.com/davidwpace/open-biomedical-resource-center/actions/runs/42172821542.
 - The full software-only integration has **not** been installed, run, or validated.
+
+
+## Completion pass
+A standalone read-only public-evidence packet adapter and tests now qualify the narrow software interface. See SOFTWARE_PILOT_ACCEPTANCE.md. Upstream agent/model/laboratory integration remains gated; the adapter does not silently import or execute upstream controls.
