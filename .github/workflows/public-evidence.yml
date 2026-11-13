@@ -1,0 +1,19 @@
+name: Verify public evidence adapter
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  adapter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            adapters
+            docs
+          sparse-checkout-cone-mode: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s adapters/tests -v
+      - run: python adapters/public_evidence.py adapters/example_public_input.json --output /tmp/public_packet.json
